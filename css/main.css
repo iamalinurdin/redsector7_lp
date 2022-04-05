@@ -1,7 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.active {
+  color: red !important;
+}
+
 .img-small {
-  width: 150px;
+  width: 100%;
 }
 
 .img-large {
   width: 350px;
+}
+
+/* .text-title {
+  border-bottom: 2px solid rgb(220, 53, 69);
+  border-width: 30px;
+} */
+
+.merchandise {
+  position: relative;
+  width: 100%;
+}
+
+
+.merchandise > .merchandise-title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: transparent; */
+  opacity: 0;
+  background-color: rgb(10, 10, 10);
+  transition: .5s ease;
+  z-index: 10;
+}
+
+.merchandise-title > h5 {
+  /* display: none; */
+  position: absolute;
+  padding: 5px 10px;
+  /* background-color: red; */
+  opacity: 1;
+  top: 40% !important;
+}
+
+.merchandise > img {
+  display: block;
+  width: 100%;
+  height: 140px;
+}
+
+.merchandise-title:hover {
+  opacity: .9;
+}
+
+/* .merchandise-title:hover > h5 {
+  opacity: 1;
+  color: #fff;
+  background-color: red;
+} */
+
+.merchandise:hover > img {
+  filter: grayscale(100%);
 }
